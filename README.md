@@ -20,7 +20,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/RynZM/RePost">
-    <img src="repost.png" alt="Logo" width="80" height="80">
+    <img src="repost/static/images/repost.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">RePost</h3>
