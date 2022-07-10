@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block FAVICON %}
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+{% endblock %}
+
+{% block TITLE %}
+    <title>REPLACE ME</title>
+{% endblock %}
+
+{% block ADDITIONAL_CSS_IMPORTS %}
+    {{ super() }}
+    <style></style>
+{% endblock %}
+
+{% block ADDITIONAL_JS_IMPORTS %}
+    {{ super() }}
+    <script></script>
+{% endblock %}
+
+{% block PAGE_SCRIPT %}
+    <script></script>
+{% endblock %}
+
+{% block PAGE_CONTENT %}
+    <div class="container-fluid">
+    </div>
+{% endblock %}

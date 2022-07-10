@@ -1,0 +1,64 @@
+{# THIS WILL BE LOADED ON EVERY SINGLE PAGE IN RePost #}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% block jquery %}
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    {% endblock %}
+
+    {% block moment %}
+    <!--Time/Date Functions -->
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js
+        integrity="sha512-G9dfCJFG3y/Xq8mbbqb5i3FQNVaGl0Fkkw+VPVT3L00gA4k7hyjSGNpAxykwgDw1cfJFlj5tO3XePa+ezjDQyQ=="
+        crossorigin="anonymous"></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js
+        integrity="sha512-NOqkPURPEeHGvb+6NAzb8hfxqUh9XvuaCDP+FevWSPM5a9yD8eLTVCwDzHh0G+mDRXH044rGtMKxyaDncAW4cw=="
+        crossorigin="anonymous"></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone.min.js
+        integrity="sha512-jkvef+BAlqJubZdUhcyvaE84uD9XOoLR3e5GGX7YW7y8ywt0rwcGmTQHoxSMRzrJA3+Jh2T8Uy6f8TLU3WQhpQ=="
+        crossorigin="anonymous"></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-utils.min.js
+        integrity="sha512-MhyYhOmhEnF3AKVBsqsk0RkqfuGMO5+EKAVbGXj+HKp+pda8Uj21JM/rOA94ftVKINpMcWc93E1xpRAYIpeF5w=="
+        crossorigin="anonymous"></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data.min.js
+        integrity="sha512-rjmacQUGnwQ4OAAt3MoAmWDQIuswESNZwYcKC8nmdCIxAVkRC/Lk2ta2CWGgCZyS+FfBWPgaO01LvgwU/BX50Q=="
+        crossorigin="anonymous"></script>
+    {% endblock %}
+
+    {% block bootstrap %}
+    <!--Core -->
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.0/js/bootstrap.bundle.js
+        integrity="sha512-a86ruoyV/wS1vQSPL5+1m0FvZmsneebPaoQ05HDqJzY8EQSnDejbeMxQtrXPCDOntDNnDHC9lRkRirCjXaM7MA=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.0/css/bootstrap.min.css
+        integrity="sha512-GLR4EA4wYjbISMSMYpUbHL1qTZNa575EQ4JIQJbrKqCJFPMZrw5umiBQrPH3orULt0NbKcuZcBis8KJwVI/MLQ=="
+        crossorigin="anonymous" />
+
+    <!--Menus -->
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/bootstrap-submenu/2.0.4/js/bootstrap-submenu.min.js
+        integrity="sha512-0tp04qt2Ocu5T2W6eK2KSujgSVIbEW/khAq/1bU8nLkQKJVOrK6oNUlh8gNOGjoiOk+Pzpd3MvOOeolqdVR1Mg=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href=https://cdnjs.cloudflare.com/ajax/libs/bootstrap-submenu/2.0.4/css/bootstrap-submenu.min.css
+        integrity="sha512-mIlIr/Vs53LfjbduQc1ypaMoKunnglOpYsKorA47iKhWD4/Sd753t6e9trcacMdjY8vzzUjqwP9RxhX59R767w=="
+        crossorigin="anonymous" />
+
+    <!--Date Dropdowns -->
+    <script type="text/javascript" src=https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js> </script>
+        <link rel="stylesheet" type="text/css" href=https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css />
+
+    <!--Smartphone-like button switches -->
+    <link href=https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css rel="stylesheet">
+    <script src=https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js> </script> {% endblock %}
+        {% block font_awesome %} <!--Icon pack -->
+        <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" />
+        <script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js integrity="sha512-LW9+kKj/cBGHqnI4ok24dUWNR/e8sUD8RLzak1mNw5Ja2JYCmTXJTF5VpgFSw+VoBfpMvPScCo2DnKTIUjrzYw==" crossorigin="anonymous">
+    </script>
+    {% endblock %}
+</head>
+
+</html>

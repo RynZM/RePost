@@ -1,0 +1,48 @@
+{#The navigation bar for the website will go here #}
+
+<nav class="navbar navbar-expand-lg navbar-repost">
+    <a class="navbar-brand" href="{{deploymentURI}}/">RePost</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="naviAppssMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Apps</a>
+                <div class="dropdown-menu" aria-labelledby="naviAppssMenuLink">
+                    <a target="_self" class="dropdown-item" href="{{deploymentURI}}/??">Mail -> Email</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="naviToolsMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Tools</a>
+                <div class="dropdown-menu" aria-labelledby="naviToolsMenuLink">
+                    <a target="_blank" class="dropdown-item">Jira</a>
+                    <a target="_blank" class="dropdown-item">RePost Git Repo</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="naviToolsMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Places</a>
+                <div class="dropdown-menu" aria-labelledby="naviToolsMenuLink">
+                    <a target="_blank" class="dropdown-item">My Github</a>
+                    <a target="_blank" class="dropdown-item">My LinkedIn</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <form class="form-inline">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" target="_blank"
+                    style="display: block;background: #0077C8;text-align: center;border: 1px solid black;border-radius: 5px;color: white;font-weight: 400;">Create Issue</a>
+            </li>
+        </ul>
+    </form>
+</nav>

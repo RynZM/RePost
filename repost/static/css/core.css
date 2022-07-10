@@ -1,0 +1,186 @@
+.collapse-chevron::before {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    float: left;
+    color: grey;
+}
+
+.collapse-chevron.collapsed::before {
+    content: "\e080";
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.navbar-repost {
+    background-color: #00457c;
+    border-color: #003158;
+    margin-bottom: 20px;
+}
+
+.navbar-repost .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-repost .navbar-brand:hover,
+.navbar-repost .navbar-brand:focus {
+    color: #ffffff;
+}
+
+.navbar-repost .navbar-text {
+    color: #ffffff;
+}
+
+.navbar-repost .navbar-nav > li > a {
+    color: #ffffff;
+}
+
+.navbar-repost .navbar-nav > li > a:hover,
+.navbar-repost .navbar-nav > li > a:focus {
+    color: #ffffff;
+}
+
+.navbar-repost .navbar-nav > .active > a,
+.navbar-repost .navbar-nav > .active > a:hover,
+.navbar-repost .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #003158;
+}
+
+.navbar-repost .navbar-nav > .open > a,
+.navbar-repost .navbar-nav > .open > a:hover,
+.navbar-repost .navbar-nav > .open > a:focus {
+    color: #ffffff;
+    background-color: #003158;
+}
+
+.navbar-repost .navbar-toggle {
+    border-color: #003158;
+}
+
+.navbar-repost .navbar-toggle:hover,
+.navbar-repost .navbar-toggle:focus {
+    background-color: #003158;
+}
+
+.navbar-repost .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+.navbar-repost .navbar-collapse,
+.navbar-repost .navbar-form {
+    border-color: #ffffff;
+}
+
+.navbar-repost .navbar-link {
+    color: #ffffff;
+}
+
+.navbar-repost .navbar-link:hover {
+    color: #ffffff;
+}
+
+.history-tooltip + .tooltip > .tooltip-inner {
+    background-color: #337AB7 !important;
+    max-width: 100%;
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    .navbar-repost .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffffff;
+    }
+
+    .navbar-repost .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-repost .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #ffffff;
+    }
+
+    .navbar-repost .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-repost .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-repost .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #ffffff;
+        background-color: #003158;
+    }
+}
+
+tfoot input {
+    width: 90%;
+    padding: 3px;
+    box-sizing: border-box;
+    font-size: 70%;  /* make search box text smaller */
+    font-weight:normal;  /* make search box text normal */
+}
+
+tfoot {
+    display: table-header-group; /* place search boxes at top */
+}
+
+.ellipsis {
+    max-width: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.modal-header {
+    color: white;
+    border-bottom:1px solid #eee;
+    background-color: #00457c;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.modal-body {
+    background-color: #FFFFFF;
+}
+
+.modal-content {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    background-color: transparent;
+}
+
+.modal-footer {
+    border-top:1px solid #eee;
+    background-color: white;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+}
+
+.close:not(:disabled):not(.disabled):hover {
+    opacity: 1;
+}
+
+button:focus.close {
+    outline: none;
+}
+
+.fa-button-wrapper{
+    cursor: pointer;
+}
+
+/*Basic Loading Spinner */
+.repost-loader {
+    border: 4.5px solid #f3f3f3;
+    border-top: 4.5px solid #3498db;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

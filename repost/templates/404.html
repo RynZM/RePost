@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block TITLE %}<title>Error 404 - Page Not Found</title>{% endblock %}
+
+{% block ADDITIONAL_CSS_IMPORTS %}
+    {{ super() }}
+    <style></style>
+{% endblock %}
+
+{% block ADDITIONAL_JS_IMPORTS %}
+    {{ super() }}
+    <script></script>
+{% endblock %}
+
+{% block PAGE_SCRIPT %}
+    <script></script>
+{% endblock %}
+
+{% block PAGE_CONTENT %}
+    <div class="container-fluid">
+        <h2>ERROR (404)</h2>
+        <h4>The resource has either moved or is not located on the server.</h4>
+    </div>
+{% endblock %}

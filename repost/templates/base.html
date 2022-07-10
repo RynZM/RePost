@@ -1,0 +1,47 @@
+{#base.html                             (side wide page base including inline scripting)#}
+{#-meta_header.html                     (IE compatability, pre-checks, etc)#}
+{#-web_tools.html                         (js, css, extras, as their include links)#}
+{#-nav.html                             (site wide nav and its supporting inline scripting including an if(dev) UI segment)#}
+{#--[appname_endpoint].html          (app endpoint)#}
+{% set DEPLOYMENT_URI = config['DEPLOYMENT_URI'] %}
+
+<!DOCTYPE html>
+
+<head>
+    {% block FAVICON %}
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    {% endblock %}
+
+    {% block TITLE %}
+    <title>Repost Web Server</title>
+    {% endblock %}
+
+    {% include 'headers.html' %}
+    {% include 'web_tools.html' %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/core.css') }}" />
+    {% block ADDITIONAL_CSS_IMPORTS %}
+    {% endblock %}
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/core.js') }}"></script>
+    {% block ADDITIONAL_JS_IMPORTS %}
+    {% endblock %}
+
+    {% block SITE_SCRIPT %}
+    <script>
+        var DEPLOYMENT_URI = "{{ DEPLOYMENT_URI }}";
+    </script>
+    {% endblock %}
+</head>
+
+<body>
+    {% include 'navi.html' %}
+
+    {% block PAGE_SCRIPT %}
+    {% endblock %}
+
+    {% block PAGE_CONTENT %}
+    <h3>The index of this application has no content.</h3>
+    {% endblock %}
+
+</body>
